@@ -32,6 +32,7 @@ export default {
     };
   },
   created() {
+    //eventEmitter.$emit('change-summ', 50);
     //console.log('in Beforcreated rabotaFrom.price;: ', rabotaFrom.price);
     //this.price = rabotaFrom.price;
   },
@@ -56,11 +57,14 @@ export default {
       summa = summa + ostatok;
       //console.log('novaya summa = ', summa);
       this.summa = summa;
+
+      if (this.isActive)
+        eventEmitter.$emit('change-summ', this.summa, this.rabotaFrom.id);
     },
     selectRaboty: function() {
       this.showSumm = true;
       this.isActive = true;
-      eventEmitter.$emit('cange-summ', this.summa);
+      eventEmitter.$emit('change-summ', this.summa, this.rabotaFrom.id);
     },
     abortRaboty: function() {
       this.showSumm = false;

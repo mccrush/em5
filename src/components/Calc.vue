@@ -16,7 +16,7 @@
             <Rabota v-for="rabota in listRabot" :key="rabota.id" :rabotaFrom="rabota"/>
             <tr>
               <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-              <td> Sum </td>
+              <td>++</td>
             </tr>
           </tbody>
         </table>
@@ -28,6 +28,7 @@
 
 <script>
 import { loadList } from '../core/raboty.js';
+import { eventEmitter } from '../main.js';
 import Rabota from './Rabota.vue';
 
 export default {
@@ -40,8 +41,29 @@ export default {
   },
   data: function() {
     return {
-      listRabot: loadList()
+      listRabot: loadList(),
+      arraySumm: [],
+      totalSumma: '0'
     };
+  },
+  created() {
+    eventEmitter.$on('change-summ', (summFrom, id) => {
+      console.log('summFrom = ' + summFrom, 'id = ', id);
+      this.arraySumm[id] = summFrom;
+      console.log(this.arraySumm);
+      let totSum = 0;
+      this.arraySumm.forEach(function(item) {
+        totSum = totSum + +item;
+        console.log('Itogo = ', totSum);
+        //this.totalSumm = this.totalSumm + item;
+      });
+      this.totalSumma = totSum;
+      console.log('totalSumm = ', this.totalSumma);
+      // document.getElementById('inpitLink').classList.remove('is-invalid');
+      // this.id = linkFrom.id;
+      // this.href = linkFrom.href;
+      // this.title = linkFrom.title;
+    });
   }
 };
 </script>
