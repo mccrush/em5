@@ -1,10 +1,10 @@
 <template>
   <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-    <td>@mdo</td>
+    <td class="text-left pl-3">{{ rabotaFrom.title }}</td>
+    <td>{{ rabotaFrom.price }}</td>
+    <td>1</td>
+    <td>On</td>
+    <td>00</td>
   </tr>
 </template>
 

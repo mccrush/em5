@@ -2,7 +2,7 @@
   <div id="footer">
     
     <div class="container">  
-      <footer class="pt-md-4">
+      <footer class="pt-4">
         <div class="row">
            <div class="col-12 col-sm-4 border-right text-left">
             <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
