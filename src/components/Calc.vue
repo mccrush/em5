@@ -16,7 +16,7 @@
             <Rabota v-for="rabota in listRabot" :key="rabota.id" :rabotaFrom="rabota"/>
             <tr>
               <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-              <td>++</td>
+              <td>{{ totalSumma }}</td>
             </tr>
           </tbody>
         </table>
@@ -58,7 +58,7 @@ export default {
         //this.totalSumm = this.totalSumm + item;
       });
       this.totalSumma = totSum;
-      console.log('totalSumm = ', this.totalSumma);
+      console.log('totalSumma = ', this.totalSumma);
       // document.getElementById('inpitLink').classList.remove('is-invalid');
       // this.id = linkFrom.id;
       // this.href = linkFrom.href;

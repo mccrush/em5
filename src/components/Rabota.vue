@@ -32,7 +32,7 @@ export default {
     };
   },
   created() {
-    //eventEmitter.$emit('change-summ', 50);
+    if (this.rabotaFrom.id == 1) eventEmitter.$emit('change-summ', 50, 1);
     //console.log('in Beforcreated rabotaFrom.price;: ', rabotaFrom.price);
     //this.price = rabotaFrom.price;
   },
