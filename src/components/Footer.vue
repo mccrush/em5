@@ -2,16 +2,16 @@
   <div id="footer">
     
     <div class="container">  
-      <footer class="pt-4">
+      <footer class="pt-4 pricing-header mx-auto">
         <div class="row">
-           <div class="col-12 col-sm-4 border-right text-left">
+           <div class="col-12 col-sm-5 border-right text-left">
             <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
             <small class="d-block mb-3">* Предложение не является публичной офертой!<br>
             ** При заказе работ, консультация осуществляется бесплатно.<br>
-            *** Каждая следующая точка на 50 рублей дешевле суммы предыдущих.
+            *** Каждая следующая <abbr title="Замена розетки, выключателя и т.д.">точка</abbr> на 50 рублей дешевле суммы предыдущих.
             </small>
           </div>
-          <div class="col-6 col-sm-4 border-right text-left">
+          <div class="col-6 col-sm-3 border-right text-left">
             <h5>Режим работы</h5>
             <ul class="list-unstyled">
               <li><small>Вт: 9:00 - 18:00</small></li>
@@ -63,7 +63,11 @@ export default {
   /*background-image: url('../assets/bg2.png');*/
 }
 
+.pricing-header {
+  max-width: 700px;
+}
+
 .material-icons {
-  font-size: 20px;
+  font-size: 18px;
 }
 </style>
