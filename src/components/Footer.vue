@@ -2,7 +2,7 @@
   <div id="footer">
     
     <div class="container">  
-      <footer class="pt-4 pricing-header mx-auto">
+      <footer class="pt-4 mx-auto">
         <div class="row">
            <div class="col-12 col-sm-5 border-right text-left">
             <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
@@ -12,7 +12,7 @@
             </small>
           </div>
           <div class="col-6 col-sm-3 border-right text-left">
-            <h5>Режим работы</h5>
+            <h6>Режим работы</h6>
             <ul class="list-unstyled">
               <li><small>Вт: 9:00 - 18:00</small></li>
               <li><small>Ср: 9:00 - 18:00</small></li>
@@ -22,7 +22,7 @@
             </ul>
           </div>
           <div class="col-6 col-sm-4 text-left">
-            <h5>Контакты</h5>
+            <h6>Контакты</h6>
             <ul class="list-unstyled">
               <li class="d-flex align-items-center"><i class="material-icons">phone</i><a class="text-white-50 ml-2" href="tel:+79069404069">8 906 940 4069</a></li>
               <li class="d-flex align-items-center"><i class="material-icons">language</i> <a class="text-white-50 ml-2" href="http://em5electric.ru" target="_self">em5electric.ru</a></li>
@@ -54,17 +54,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  max-width: 960px;
+  max-width: 700px;
 }
 
 #footer {
   color: rgba(255, 255, 255, 0.87);
   background-color: #3e2723;
   /*background-image: url('../assets/bg2.png');*/
-}
-
-.pricing-header {
-  max-width: 700px;
 }
 
 .material-icons {
