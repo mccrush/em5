@@ -5,7 +5,7 @@
         <table class="table table-striped table-borderless table-sm table-responsive-sm">
           <thead>
             <tr>
-              <th scope="col">Наименование</th>
+              <th scope="col">Вид работ</th>
               <th scope="col">Стоим</th>
               <th scope="col">Колич</th>
               <th scope="col">Выбор</th>
