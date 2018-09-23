@@ -1,8 +1,8 @@
 <template>
-  <div id="calc" class="border-bottom">
+  <div id="calc" class="border-bottom pt-2">
     
     <div class="container">
-        <table class="table table-striped table-borderless table-sm">
+        <table class="table table-striped table-borderless table-sm table-responsive-sm">
           <thead>
             <tr>
               <th scope="col-4">Наименование работы</th>
@@ -13,27 +13,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td >Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>@mdo</td>
-            </tr>
+            <Rabota v-for="rabota in listRabot" :key="rabota.id" :rabotaFrom="rabota"/>>
           </tbody>
         </table>
         <div class="card-deck mb-3 pt-3">
@@ -89,10 +69,21 @@
 </template>
 
 <script>
+import { loadList } from '../core/raboty.js';
+import Rabota from './components/Rabota.vue';
+
 export default {
   name: 'Calc',
   props: {
     msg: String
+  },
+  components: {
+    Rabota
+  },
+  data: function() {
+    return {
+      listRabot: loadList()
+    };
   }
 };
 </script>

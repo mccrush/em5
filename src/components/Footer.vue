@@ -2,16 +2,16 @@
   <div id="footer">
     
     <div class="container">  
-      <footer class="pt-4 pt-md-5">
+      <footer class="pt-md-4">
         <div class="row">
-           <div class="col-4 col-md border-right text-left">
+           <div class="col-12 col-sm-4 border-right text-left">
             <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
             <small class="d-block mb-3">* Предложение не является публичной офертой!<br>
             ** При заказе работ, консультация осуществляется бесплатно.<br>
             *** Каждая следующая точка на 50 рублей дешевле суммы предыдущих.
             </small>
           </div>
-          <div class="col-4 col-md border-right text-left pl-5">
+          <div class="col-6 col-sm-4 border-right text-left">
             <h5>Режим работы</h5>
             <ul class="list-unstyled">
               <li><small>Вт: 9:00 - 18:00</small></li>
@@ -21,13 +21,13 @@
               <li><small>Сб: 10:00 - 15:00</small></li>
             </ul>
           </div>
-          <div class="col-4 col-md text-left pl-5">
+          <div class="col-6 col-sm-4 text-left">
             <h5>Контакты</h5>
             <ul class="list-unstyled">
               <li class="d-flex align-items-center"><i class="material-icons">phone</i><a class="text-white-50 ml-2" href="tel:+79069404069">8 906 940 4069</a></li>
               <li class="d-flex align-items-center"><i class="material-icons">language</i> <a class="text-white-50 ml-2" href="http://em5electric.ru" target="_self">em5electric.ru</a></li>
               <li class="d-flex align-items-center"><i class="material-icons">open_in_new</i> <a class="text-white-50 ml-2" href="http://vk.com/em5electric" target="_blank">vk.com/em5electric</a></li>
-              <li class="d-flex align-items-center"><i class="material-icons">mail_outline</i><a class="text-white-50 ml-2" href="mailto:support@em5electric.ru?subject=Вопрос электрику">support@em5electric.ru</a></li>
+              <li class="d-flex align-items-center"><i class="material-icons">mail_outline</i><a class="text-white-50 ml-2" href="mailto:support@em5electric.ru?subject=Вопрос электрику"><small>support@em5electric.ru</small></a></li>
             </ul>
           </div>
         </div>

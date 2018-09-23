@@ -1,0 +1,61 @@
+export function loadList() {
+  var mydata = [{
+    id: 1,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/164/png/Z200/?mix.sibnet.ru",
+    position: 1
+  }, {
+    id: 2,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "#",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/JPEG/154/Z200/?mccrush.ru",
+    position: 2
+  }, {
+    id: 3,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/JPEG/1024/Z200/?vk.com",
+    position: 3
+  }, {
+    id: 4,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/154/png/Z200/?mail.ru",
+    position: 4
+  }, {
+    id: 5,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/164/png/Z200/?mix.sibnet.ru",
+    position: 5
+  }, {
+    id: 6,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "#",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/JPEG/154/Z200/?mccrush.ru",
+    position: 6
+  }, {
+    id: 7,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/JPEG/1024/Z200/?vk.com",
+    position: 7
+  }, {
+    id: 8,
+    title: "https://textance.herokuapp.com/rest/title/",
+    href: "http://google.com",
+    icon: "https://s2.googleusercontent.com/s2/favicons?domain_url=https://trello.com/b/wNz9Hbop/01-tasklist&amp;alt=s&amp;sz=32",
+    thumb: "https://mini.s-shot.ru/1024x768/154/png/Z200/?mail.ru",
+    position: 8
+  }];
+  //var data = JSON.parse(localStorage.getItem(STORAGE_KEY_G) || '[]');
+  return mydata;
+}
