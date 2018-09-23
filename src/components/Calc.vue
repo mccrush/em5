@@ -14,6 +14,10 @@
           </thead>
           <tbody>
             <Rabota v-for="rabota in listRabot" :key="rabota.id" :rabotaFrom="rabota"/>
+            <tr>
+              <td colspan="4" class="text-right"><strong>Итого:</strong></td>
+              <td> Sum </td>
+            </tr>
           </tbody>
         </table>
         
