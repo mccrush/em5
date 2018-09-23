@@ -5,11 +5,12 @@
     <td width="10%"><input v-if="rabotaFrom.id !== 1 && rabotaFrom.id !== 2" class="form-control form-control-sm" type="number" placeholder="1" step="1" min="1" max="99" v-on:input="comput" v-model.number="counter"></td>
     <td>
       <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary active">Нет</button>
-        <button type="button" class="btn btn-secondary">Да&nbsp;</button>
+        <button type="button" class="btn btn-light" v-bind:class="[ isActive ? '' : 'active', isActive ? 'btn-light': 'btn-light' ]">Нет</button>
+        <button type="button" class="btn" v-bind:class="[ isActive ? 'active' : '', isActive ? 'btn-success': 'btn-light' ]">Да&nbsp;</button>
       </div>
     </td>
-    <td>{{ summa }}</td>
+    <td v-if="rabotaFrom.id == 1">50</td>
+    <td v-else>{{ summa }}</td>
   </tr>
 </template>
 
@@ -23,7 +24,8 @@ export default {
     return {
       summa: 0,
       counter: 0,
-      price: this.rabotaFrom.price
+      price: this.rabotaFrom.price,
+      isActive: this.rabotaFrom.active
     };
   },
   created() {
