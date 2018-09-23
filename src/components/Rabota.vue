@@ -5,16 +5,18 @@
     <td width="10%"><input v-if="rabotaFrom.id !== 1 && rabotaFrom.id !== 2" class="form-control form-control-sm" type="number" placeholder="1" step="1" min="1" max="99" v-on:input="comput" v-model.number="counter"></td>
     <td>
       <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-light" v-bind:class="[ isActive ? '' : 'active', isActive ? 'btn-light': 'btn-light' ]">Нет</button>
-        <button type="button" class="btn" v-bind:class="[ isActive ? 'active' : '', isActive ? 'btn-success': 'btn-light' ]">Да&nbsp;</button>
+        <button type="button" class="btn btn-light" v-bind:class="[ isActive ? '' : 'active', isActive ? 'btn-light': 'btn-light' ]" v-on:click="abortRaboty">Нет</button>
+        <button type="button" class="btn" v-bind:class="[ isActive ? 'active' : '', isActive ? 'btn-success': 'btn-light' ]" v-on:click="selectRaboty">Да&nbsp;</button>
       </div>
     </td>
-    <td v-if="rabotaFrom.id == 1">50</td>
-    <td v-else>{{ summa }}</td>
+    <td v-if="rabotaFrom.id == 1 || showSumm">{{ summa }}</td>
+    <td v-else>&nbsp;</td>
   </tr>
 </template>
 
 <script>
+import { eventEmitter } from '../main.js';
+
 export default {
   name: 'Rabota',
   props: {
@@ -22,10 +24,11 @@ export default {
   },
   data() {
     return {
-      summa: 0,
-      counter: 0,
+      summa: this.rabotaFrom.price,
+      counter: 1,
       price: this.rabotaFrom.price,
-      isActive: this.rabotaFrom.active
+      isActive: this.rabotaFrom.active,
+      showSumm: false
     };
   },
   created() {
@@ -53,6 +56,15 @@ export default {
       summa = summa + ostatok;
       //console.log('novaya summa = ', summa);
       this.summa = summa;
+    },
+    selectRaboty: function() {
+      this.showSumm = true;
+      this.isActive = true;
+      eventEmitter.$emit('cange-summ', this.summa);
+    },
+    abortRaboty: function() {
+      this.showSumm = false;
+      this.isActive = false;
     }
   }
 };
