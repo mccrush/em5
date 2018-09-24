@@ -6,7 +6,7 @@ export function loadList() {
     active: true,
   }, {
     id: 2,
-    title: "Консультация",
+    title: "Закупка",
     price: "50",
     active: false,
   }, {
