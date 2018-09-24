@@ -5,9 +5,9 @@
         <table class="table table-striped table-borderless table-sm table-responsive-sm">
           <thead>
             <tr>
-              <th scope="col">Вид работ</th>
+              <th scope="col">Вид работ*</th>
               <th scope="col"><abbr title="Стоимость работы">Стоим</abbr></th>
-              <th scope="col"><abbr title="Количество">Колич</abbr></th>
+              <th scope="col"><abbr title="Количество">Колич**</abbr></th>
               <th scope="col">Выбор</th>
               <th scope="col">Сумма</th>
             </tr>
