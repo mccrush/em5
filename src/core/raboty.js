@@ -11,7 +11,7 @@ export function loadList() {
     active: false,
   }, {
     id: 3,
-    title: "Замена лампочи",
+    title: "Замена лампочки",
     price: "50",
     active: false,
   }, {
@@ -26,7 +26,7 @@ export function loadList() {
     active: false,
   }, {
     id: 6,
-    title: "Замена выключателья",
+    title: "Замена выключателя",
     price: "200",
     active: false,
   }, {

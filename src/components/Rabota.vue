@@ -1,6 +1,9 @@
 <template>
   <tr>
-    <td class="text-left pl-2" vertical-align="baseline">{{ rabotaFrom.title }}</td>
+    <td class="text-left pl-2" vertical-align="baseline">
+      <span class="d-none d-sm-block">{{ rabotaFrom.title }}</span>
+      <small class="d-sm-none">{{ rabotaFrom.title }}</small>
+    </td>
     <td>{{ rabotaFrom.price }}</td>
     <td width="10%"><input v-if="rabotaFrom.id !== 1 && rabotaFrom.id !== 2" class="form-control form-control-sm" type="number" placeholder="1" step="1" min="1" max="99" v-on:input="comput" v-model.number="counter"></td>
     <td>
