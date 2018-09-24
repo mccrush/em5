@@ -6,7 +6,7 @@
         <div class="row">
            <div class="col-12 col-sm-5 border-right text-left">
             <!-- <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
-            <small class="d-block mb-3">* Предложение не является публичной офертой!<br>
+            <small class="d-block mb-3">* Предложение не является публичной офертой!<br><br>
             ** Каждая следующая <abbr title="Замена розетки, выключателя и т.д.">точка</abbr> на 25% дешевле суммы предыдущих.
             </small>
           </div>
