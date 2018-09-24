@@ -1,7 +1,7 @@
 export function loadList() {
   var mydata = [{
     id: 2,
-    title: "Закупка",
+    title: "Закупка материала",
     price: "50",
     active: false,
   }, {
