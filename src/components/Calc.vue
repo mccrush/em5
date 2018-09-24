@@ -1,5 +1,5 @@
 <template>
-  <div id="calc" class="border-bottom pt-3 pb-3">
+  <div id="calc" class="pt-3 pb-3">
     
     <div class="container">
         <table class="table table-striped table-borderless table-sm table-responsive-sm">

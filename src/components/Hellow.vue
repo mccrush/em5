@@ -1,9 +1,10 @@
 <template>
-  <div id="hello" class="border-bottom">
+  <div id="hello" class="">
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">«ЭМ5 электрик»</h1>
-      <p class="lead">Мелкосрочный ремонт бытовых электроприборов<br>г. Славгород</p>
+    <div class="pricing-header px-3 py-3 pt-4 mx-auto text-center">
+      <!-- <h1 class="display-4">«ЭМ5 электрик»</h1> -->
+      <img class="my-0 mr-md-auto mt-1 mb-3" alt="Vue logo" src="../assets/logo.png" height="150">
+      <p class="lead mb-0">Чиним и ремонтируем ⚡<br>Мелкосрочный ремонт бытовых электроприборов</p>
     </div>
 
   </div>
