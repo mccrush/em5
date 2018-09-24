@@ -13,6 +13,23 @@
             </tr>
           </thead>
           <tbody>
+
+              <tr>
+                <td class="text-left pl-2" vertical-align="baseline">
+                  <span class="d-none d-sm-block">Вызов электрика</span>
+                  <small class="d-sm-none">Вызов электрика</small>
+                </td>
+                <td>50</td>
+                <td width="10%"></td>
+                <td>
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light disabled">Нет</button>
+                    <button type="button" class="btn btn-success active disabled">Да&nbsp;</button>
+                  </div>
+                </td>
+                <td>50</td>
+              </tr>
+
             <Rabota v-for="rabota in listRabot" :key="rabota.id" :rabotaFrom="rabota"/>
             <tr>
               <td colspan="4" class="text-right"><strong>Итого:</strong></td>
@@ -43,21 +60,34 @@ export default {
     return {
       listRabot: loadList(),
       arraySumm: [],
-      totalSumma: '0'
+      totalSumma: '50'
     };
   },
   created() {
-    eventEmitter.$on('change-summ', (summFrom, id) => {
+    eventEmitter.$on('add-summ', (summFrom, id) => {
       console.log('summFrom = ' + summFrom, 'id = ', id);
       this.arraySumm[id] = summFrom;
       console.log(this.arraySumm);
-      let totSum = 0;
+      let totSum = 50;
       this.arraySumm.forEach(function(item) {
         totSum = totSum + +item;
         console.log('Itogo = ', totSum);
         //this.totalSumm = this.totalSumm + item;
       });
       this.totalSumma = totSum;
+      console.log('totalSumma = ', this.totalSumma);
+      // document.getElementById('inpitLink').classList.remove('is-invalid');
+      // this.id = linkFrom.id;
+      // this.href = linkFrom.href;
+      // this.title = linkFrom.title;
+    });
+
+    eventEmitter.$on('remove-summ', (summFrom, id) => {
+      console.log('summFrom = ' + summFrom, 'id = ', id);
+      this.arraySumm[id] = 0;
+      console.log(this.arraySumm);
+
+      this.totalSumma = this.totalSumma - summFrom;
       console.log('totalSumma = ', this.totalSumma);
       // document.getElementById('inpitLink').classList.remove('is-invalid');
       // this.id = linkFrom.id;

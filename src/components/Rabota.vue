@@ -5,14 +5,14 @@
       <small class="d-sm-none">{{ rabotaFrom.title }}</small>
     </td>
     <td>{{ rabotaFrom.price }}</td>
-    <td width="10%"><input v-if="rabotaFrom.id !== 1 && rabotaFrom.id !== 2" class="form-control form-control-sm" type="number" placeholder="1" step="1" min="1" max="99" v-on:input="comput" v-model.number="counter"></td>
+    <td width="10%"><input v-if="rabotaFrom.id !== 2" class="form-control form-control-sm" type="number" placeholder="1" step="1" min="1" max="99" v-on:input="comput" v-model.number="counter"></td>
     <td>
       <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-light" v-bind:class="[ isActive ? '' : 'active', isActive ? 'btn-light': 'btn-light' ]" v-on:click="abortRaboty">Нет</button>
         <button type="button" class="btn" v-bind:class="[ isActive ? 'active' : '', isActive ? 'btn-success': 'btn-light' ]" v-on:click="selectRaboty">Да&nbsp;</button>
       </div>
     </td>
-    <td v-if="rabotaFrom.id == 1 || showSumm">{{ summa }}</td>
+    <td v-if="showSumm">{{ summa }}</td>
     <td v-else>&nbsp;</td>
   </tr>
 </template>
@@ -35,7 +35,7 @@ export default {
     };
   },
   created() {
-    if (this.rabotaFrom.id == 1) eventEmitter.$emit('change-summ', 50, 1);
+    if (this.rabotaFrom.id == 1) eventEmitter.$emit('add-summ', 50, 1);
     //console.log('in Beforcreated rabotaFrom.price;: ', rabotaFrom.price);
     //this.price = rabotaFrom.price;
   },
@@ -62,16 +62,17 @@ export default {
       this.summa = summa;
 
       if (this.isActive)
-        eventEmitter.$emit('change-summ', this.summa, this.rabotaFrom.id);
+        eventEmitter.$emit('add-summ', this.summa, this.rabotaFrom.id);
     },
     selectRaboty: function() {
       this.showSumm = true;
       this.isActive = true;
-      eventEmitter.$emit('change-summ', this.summa, this.rabotaFrom.id);
+      eventEmitter.$emit('add-summ', this.summa, this.rabotaFrom.id);
     },
     abortRaboty: function() {
       this.showSumm = false;
       this.isActive = false;
+      eventEmitter.$emit('remove-summ', this.summa, this.rabotaFrom.id);
     }
   }
 };

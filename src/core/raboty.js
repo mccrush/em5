@@ -1,10 +1,5 @@
 export function loadList() {
   var mydata = [{
-    id: 1,
-    title: "Вызов электрика",
-    price: "50",
-    active: true,
-  }, {
     id: 2,
     title: "Закупка",
     price: "50",
