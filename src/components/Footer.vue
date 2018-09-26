@@ -27,6 +27,7 @@
               <li class="d-flex align-items-center"><i class="material-icons">language</i> <a class="text-white-50 ml-2" href="http://em5electric.ru" target="_self">em5electric.ru</a></li>
               <li class="d-flex align-items-center"><i class="material-icons">open_in_new</i> <a class="text-white-50 ml-2" href="http://vk.com/em5electric" target="_blank">vk.com/em5electric</a></li>
               <li class="d-flex align-items-center"><i class="material-icons">mail_outline</i><a class="text-white-50 ml-2" href="mailto:support@em5electric.ru?subject=Вопрос электрику"><small>support@em5electric.ru</small></a></li>
+              <li class="d-flex align-items-center"><i class="material-icons">location_on</i><span class="text-white-50 ml-2">г. Славгород</span></li>
             </ul>
           </div>
         </div>
