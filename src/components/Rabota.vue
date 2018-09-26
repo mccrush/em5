@@ -31,10 +31,11 @@ export default {
       counter: 1,
       price: this.rabotaFrom.price,
       isActive: this.rabotaFrom.active,
-      showSumm: false
+      showSumm: false,
+      abort: false
     };
   },
-  created() { 
+  created() {
     //console.log('in Beforcreated rabotaFrom.price;: ', rabotaFrom.price);
     //this.price = rabotaFrom.price;
   },
@@ -62,16 +63,21 @@ export default {
 
       if (this.isActive)
         eventEmitter.$emit('add-summ', this.summa, this.rabotaFrom.id);
+      this.abort = true;
     },
     selectRaboty: function() {
       this.showSumm = true;
       this.isActive = true;
       eventEmitter.$emit('add-summ', this.summa, this.rabotaFrom.id);
+      this.abort = true;
     },
     abortRaboty: function() {
       this.showSumm = false;
       this.isActive = false;
-      eventEmitter.$emit('remove-summ', this.summa, this.rabotaFrom.id);
+      if (this.abort) {
+        eventEmitter.$emit('remove-summ', this.summa, this.rabotaFrom.id);
+        this.abort = false;
+      }
     }
   }
 };
