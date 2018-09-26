@@ -34,8 +34,7 @@ export default {
       showSumm: false
     };
   },
-  created() {
-    if (this.rabotaFrom.id == 1) eventEmitter.$emit('add-summ', 50, 1);
+  created() { 
     //console.log('in Beforcreated rabotaFrom.price;: ', rabotaFrom.price);
     //this.price = rabotaFrom.price;
   },
