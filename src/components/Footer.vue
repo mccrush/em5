@@ -14,7 +14,7 @@
           </div>
           <div class="col-6 col-sm-3 border-right text-left">
             <h6>Режим работы</h6>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mb-0">
               <li><small>Вт: 10:00 - 20:00</small></li>
               <li><small>Ср: 10:00 - 20:00</small></li>
               <li><small>Чт: 10:00 - 20:00</small></li>
@@ -23,11 +23,11 @@
           </div>
           <div class="col-6 col-sm-4 text-left">
             <h6>Контакты</h6>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mb-0">
               <li class="d-flex align-items-center">
                 WA
                 <a class="text-white-50 ml-2" href="tel:+79069404069"
-                  >8 906 940-40-69</a
+                  >+7 906 940-40-69</a
                 >
               </li>
               <li class="d-flex align-items-center">
@@ -98,5 +98,13 @@ export default {
 
 .material-icons {
   font-size: 18px;
+}
+
+.text-white-50 {
+  text-decoration: none;
+}
+
+.text-white-50:hover {
+  color: rgba(255, 255, 255, 0.87) !important;
 }
 </style>
