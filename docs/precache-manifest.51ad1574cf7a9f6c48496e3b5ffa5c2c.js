@@ -16,27 +16,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/em5/favicon.png"
   },
   {
-    "revision": "7ad3cbe9fe557d3b24030327b789b7a7",
-    "url": "/em5/images/icons/icon_128.png"
-  },
-  {
-    "revision": "f78b684d45d5d26c8e88a9357e097904",
-    "url": "/em5/images/icons/icon_256.png"
-  },
-  {
-    "revision": "bf5d28069241bfea3f987fda2304268f",
-    "url": "/em5/images/icons/icon_32.png"
-  },
-  {
-    "revision": "c734f9a716cc866048a31588b0c64ba5",
-    "url": "/em5/images/icons/icon_64.png"
-  },
-  {
     "revision": "d3b2e12b9120feaef8c178abbc903095",
     "url": "/em5/img/logo.d3b2e12b.png"
   },
   {
-    "revision": "db4b2d3b488a429369bdf1e07d0c2aaa",
+    "revision": "0be6c8e1947ff62047cd811c0043a87e",
     "url": "/em5/index.html"
   },
   {
