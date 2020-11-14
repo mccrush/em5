@@ -1,9 +1,9 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
+import './registerServiceWorker'
 
-Vue.config.productionTip = false
-export const eventEmitter = new Vue();
+let app
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+if (!app) {
+  app = createApp(App).mount('#app')
+}

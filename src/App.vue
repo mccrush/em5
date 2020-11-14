@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <Header msg="Welcome to Header"/>
-    <Hellow msg="Welcome to Hellow"/>
-    <Calc msg="Welcome to Calc"/>
-    <Footer msg="Welcome to Footer"/>
+    <Header />
+    <Hellow />
+    <Calc />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Hellow from './components/Hellow.vue';
-import Calc from './components/Calc.vue';
-import Footer from './components/Footer.vue';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/Header.vue'
+import Hellow from './components/Hellow.vue'
+import Calc from './components/Calc.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
@@ -20,9 +20,9 @@ export default {
     Header,
     Hellow,
     Calc,
-    Footer
-  }
-};
+    Footer,
+  },
+}
 </script>
 
 <style>
