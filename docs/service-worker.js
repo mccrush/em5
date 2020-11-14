@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.2ce52623e4ead77d54b75cb028d38e4a.js"
+  "../precache-manifest.1ff5ff6b4fba403aa756de6a4b2051bb.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "em5.loc"});
