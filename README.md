@@ -1,21 +1,6 @@
-# em5.loc
+# ЭМ5 электрик
 
-## Project setup
-```
-npm install
-```
+<p>Чиним и ремонтируем ⚡ г. Славгород
+<br>Мелкосрочный ремонт бытовых электроприборов</p>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+Ссылка: <a href="https://mccrush.github.io/em5/" title="Перейти на сайт" target="_blank">mccrush.github.io/em5</a>
