@@ -17,32 +17,32 @@ export function loadList() {
   }, {
     id: 5,
     title: "Замена розетки",
-    price: "200",
+    price: "250",
     active: false,
   }, {
     id: 6,
     title: "Замена выключателя",
-    price: "200",
+    price: "250",
     active: false,
   }, {
     id: 7,
     title: "Замена автомата",
-    price: "200",
+    price: "250",
     active: false,
   }, {
     id: 8,
     title: "Подключение водонагревателя",
-    price: "450",
+    price: "750",
     active: false,
   }, {
     id: 9,
     title: "Подключение счетчика",
-    price: "450",
+    price: "750",
     active: false,
   }, {
     id: 10,
     title: "Подключение кондиционера",
-    price: "450",
+    price: "750",
     active: false,
   }];
   //var data = JSON.parse(localStorage.getItem(STORAGE_KEY_G) || '[]');
