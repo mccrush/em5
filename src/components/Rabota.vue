@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td class="text-left pl-2" vertical-align="baseline">
+    <td class="text-left ps-2" vertical-align="baseline">
       <span class="d-none d-sm-block">{{ rabotaFrom.title }}</span>
       <small class="d-sm-none">{{ rabotaFrom.title }}</small>
     </td>
@@ -29,7 +29,7 @@
           class="btn btn-light"
           v-bind:class="[
             isActive ? '' : 'active',
-            isActive ? 'btn-light' : 'btn-light',
+            isActive ? 'btn-light' : 'btn-light'
           ]"
           v-on:click="abortRaboty"
         >
@@ -40,7 +40,7 @@
           class="btn"
           v-bind:class="[
             isActive ? 'active' : '',
-            isActive ? 'btn-success' : 'btn-light',
+            isActive ? 'btn-success' : 'btn-light'
           ]"
           v-on:click="selectRaboty"
         >
@@ -48,7 +48,7 @@
         </button>
       </div>
     </td>
-    <td v-if="showSumm">{{ summa }}</td>
+    <td v-if="showSumm">{{ summa.toLocaleString() }}</td>
     <td v-else>&nbsp;</td>
   </tr>
 </template>
@@ -57,7 +57,7 @@
 export default {
   name: 'Rabota',
   props: {
-    rabotaFrom: Object,
+    rabotaFrom: Object
   },
   data() {
     return {
@@ -66,7 +66,7 @@ export default {
       price: this.rabotaFrom.price,
       isActive: this.rabotaFrom.active,
       showSumm: false,
-      abort: false,
+      abort: false
     }
   },
   methods: {
@@ -107,8 +107,8 @@ export default {
         this.$emit('remove-summ', this.summa, this.rabotaFrom.id)
         this.abort = false
       }
-    },
-  },
+    }
+  }
 }
 </script>
 <style scoped>

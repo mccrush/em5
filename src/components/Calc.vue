@@ -15,7 +15,7 @@
         </thead>
         <tbody>
           <tr>
-            <td class="text-left pl-2" vertical-align="baseline">
+            <td class="text-left ps-2" vertical-align="baseline">
               <span class="d-none d-sm-block">Вызов электрика</span>
               <small class="d-sm-none">Вызов электрика</small>
             </td>
@@ -47,7 +47,7 @@
           />
           <tr>
             <td colspan="4" class="text-right"><strong>Итого:</strong></td>
-            <td>{{ totalSumma }}</td>
+            <td>{{ totalSumma.toLocaleString() }} ₽</td>
           </tr>
         </tbody>
       </table>
