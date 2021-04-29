@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 p-0">
     <nav class="navbar bg-light">
-      <div class="container-640 container-lg pt-1">
+      <div class="container-640 container-lg">
         <div class="cursor-def d-sm-none navbar-brand text-center w-100 me-0">
           «ЭМ5 электрик»
         </div>

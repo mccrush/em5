@@ -3,9 +3,9 @@
     <div class="row">
       <Header />
     </div>
-    <div class="row"><Hellow /></div>
+    <div class="row bg-grey"><Hellow /></div>
     <div class="row"><Calc /></div>
-    <div class="row"><Contacts /></div>
+    <div class="row bg-grey"><Contacts /></div>
     <div class="row"><Footer /></div>
   </div>
 </template>
@@ -57,6 +57,11 @@ export default {
   background-color: #f8f9fa;
 }
 
+.bg-grey {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #3e2723;
+}
+
 .cursor-def {
   cursor: default;
 }
@@ -67,5 +72,13 @@ export default {
 
 .fw-500 {
   font-weight: 600;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+svg {
+  fill: #fff;
 }
 </style>
