@@ -5,6 +5,7 @@
     </div>
     <div class="row"><Hellow /></div>
     <div class="row"><Calc /></div>
+    <div class="row"><Contacts /></div>
     <div class="row"><Footer /></div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from '@/components/Header.vue'
 import Hellow from '@/components/Hellow.vue'
 import Calc from '@/components/Calc.vue'
+import Contacts from '@/components/Contacts.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -22,6 +24,7 @@ export default {
     Header,
     Hellow,
     Calc,
+    Contacts,
     Footer
   }
 }
