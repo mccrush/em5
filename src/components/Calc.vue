@@ -1,6 +1,6 @@
 <template>
-  <div id="calc" class="pt-3 pb-3">
-    <div class="container">
+  <div class="col-12">
+    <div class="container-640 m-auto pt-4 pb-3">
       <table
         class="table table-striped table-borderless table-sm table-responsive-sm"
       >
@@ -19,7 +19,7 @@
               <span class="d-none d-sm-block">Вызов электрика</span>
               <small class="d-sm-none">Вызов электрика</small>
             </td>
-            <td>50</td>
+            <td>200</td>
             <td width="10%"></td>
             <td>
               <div
@@ -35,7 +35,7 @@
                 </button>
               </div>
             </td>
-            <td>50</td>
+            <td>200</td>
           </tr>
 
           <Rabota
@@ -62,19 +62,19 @@ import Rabota from './Rabota.vue'
 export default {
   name: 'Calc',
   components: {
-    Rabota,
+    Rabota
   },
   data: function () {
     return {
       listRabot: loadList(),
       arraySumm: [],
-      totalSumma: '50',
+      totalSumma: '200'
     }
   },
   methods: {
     addSumm(summFrom, id) {
       this.arraySumm[id] = summFrom
-      let totSum = 50
+      let totSum = 200
       this.arraySumm.forEach(function (item) {
         totSum = totSum + +item
       })
@@ -83,15 +83,11 @@ export default {
     removeSumm(summFrom, id) {
       this.arraySumm[id] = 0
       this.totalSumma = this.totalSumma - summFrom
-    },
-  },
+    }
+  }
 }
 </script>
 <style scoped>
-.container {
-  max-width: 700px; /* 960px; */
-}
-
 .table td,
 .table th {
   vertical-align: middle;

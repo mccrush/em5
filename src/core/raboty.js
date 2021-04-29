@@ -2,12 +2,12 @@ export function loadList() {
   var mydata = [{
     id: 2,
     title: "Закупка материала",
-    price: "50",
+    price: "100",
     active: false,
   }, {
     id: 3,
     title: "Замена лампочки",
-    price: "50",
+    price: "100",
     active: false,
   }, {
     id: 4,
@@ -17,12 +17,12 @@ export function loadList() {
   }, {
     id: 5,
     title: "Замена розетки",
-    price: "250",
+    price: "200",
     active: false,
   }, {
     id: 6,
     title: "Замена выключателя",
-    price: "250",
+    price: "200",
     active: false,
   }, {
     id: 7,
