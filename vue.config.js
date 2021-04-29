@@ -1,6 +1,5 @@
 module.exports = {
-  //publicPath: './',
-  publicPath: process.env.NODE_ENV === 'production' ?
-    '/em5/' : '/',
+  productionSourceMap: false,
+  publicPath: '/em5/',
   outputDir: 'docs'
 }
