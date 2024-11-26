@@ -4,8 +4,8 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  root: '.',
-  // base: '/em5/',
+  //root: '.',
+  base: '/em5/',
   build: {
     outDir: 'docs'
   }
