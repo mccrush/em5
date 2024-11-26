@@ -2,7 +2,7 @@
   <div class="col-12">
     <div class="container-640 m-auto pt-3 pb-2">
       <div class="row">
-        <div class="col-12 col-sm-5 text-left">
+        <div class="col-12 col-sm-5 text-start">
           <small class="d-block lh-1 mb-3"
             >* Предложение не является публичной офертой!<br /><br />
             ** В стоимость вызова уже входит стоимость работ<br /><br />
@@ -11,7 +11,7 @@
             дешевле суммы предыдущих.
           </small>
         </div>
-        <div class="col-6 col-sm-3 text-left small">
+        <div class="col-6 col-sm-3 text-start small">
           <h6>Режим работы</h6>
           <ul class="list-unstyled mb-0">
             <li><small>Вт: 10:00 - 20:00</small></li>
@@ -20,7 +20,7 @@
             <li><small>Пт: 10:00 - 18:00</small></li>
           </ul>
         </div>
-        <div class="col-6 col-sm-4 text-left">
+        <div class="col-6 col-sm-4 text-start">
           <h6>Контакты</h6>
           <ul class="list-unstyled small mb-0">
             <li class="d-flex align-items-center mb-1">

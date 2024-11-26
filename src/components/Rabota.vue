@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td class="text-left ps-2" vertical-align="baseline">
+    <td class="text-start ps-2" vertical-align="baseline">
       <span class="d-none d-sm-block">{{ rabotaFrom.title }}</span>
       <small class="d-sm-none">{{ rabotaFrom.title }}</small>
     </td>

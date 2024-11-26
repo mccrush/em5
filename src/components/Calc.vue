@@ -15,11 +15,11 @@
         </thead>
         <tbody>
           <tr>
-            <td class="text-left ps-2" vertical-align="baseline">
-              <span class="d-none d-sm-block">Вызов мастера</span>
-              <small class="d-sm-none">Вызов мастера</small>
+            <td class="text-start ps-2" vertical-align="baseline">
+              <span class="d-none d-sm-block">Вызов мастера**</span>
+              <small class="d-sm-none">Вызов мастера**</small>
             </td>
-            <td>500</td>
+            <td>{{ minSumma }}</td>
             <td width="10%"></td>
             <td>
               <div
@@ -35,7 +35,7 @@
                 </button>
               </div>
             </td>
-            <td>200</td>
+            <td>{{ minSumma }}</td>
           </tr>
 
           <Rabota
@@ -46,7 +46,7 @@
             @remove-summ="removeSumm"
           />
           <tr>
-            <td colspan="4" class="text-right"><strong>Итого:</strong></td>
+            <td colspan="4" class="text-end"><strong>Итого:</strong></td>
             <td>{{ totalSumma.toLocaleString() }} ₽</td>
           </tr>
         </tbody>
@@ -66,23 +66,31 @@ export default {
   },
   data: function () {
     return {
+      minSumma: 500,
       listRabot: loadList(),
       arraySumm: [],
-      totalSumma: '500'
+      totalSumma: 500
     }
   },
   methods: {
-    addSumm(summFrom, id) {
-      this.arraySumm[id] = summFrom
-      let totSum = 500
+    calcSumm() {
+      let totSum = 0
       this.arraySumm.forEach(function (item) {
         totSum = totSum + +item
       })
-      this.totalSumma = totSum
+      if (totSum < this.minSumma) {
+        this.totalSumma = this.minSumma
+      } else {
+        this.totalSumma = totSum
+      }
+    },
+    addSumm(summFrom, id) {
+      this.arraySumm[id] = summFrom
+      this.calcSumm()
     },
     removeSumm(summFrom, id) {
       this.arraySumm[id] = 0
-      this.totalSumma = this.totalSumma - summFrom
+      this.calcSumm()
     }
   }
 }
