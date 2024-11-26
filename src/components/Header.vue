@@ -8,7 +8,7 @@
 
         <div class="cursor-def d-none d-sm-block navbar-brand">
           <img
-            src="img/icons/icon_32.png"
+            src="/img/icons/icon_32.png"
             width="32"
             height="32"
             alt="Logo ЭМ5 электрик"
