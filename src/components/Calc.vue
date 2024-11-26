@@ -1,9 +1,7 @@
 <template>
   <div class="col-12">
-    <div class="container-640 m-auto pt-4 pb-3">
-      <table
-        class="table table-striped table-borderless table-sm table-responsive-sm"
-      >
+    <div class="container-640 m-auto overflow-y-auto pt-4 pb-3">
+      <table class="table table-striped table-borderless table-sm">
         <thead>
           <tr>
             <th scope="col">Вид работ*</th>
@@ -47,7 +45,7 @@
           />
           <tr>
             <td colspan="4" class="text-end"><strong>Итого:</strong></td>
-            <td>{{ totalSumma.toLocaleString() }} ₽</td>
+            <td>{{ totalSumma.toLocaleString() }}&nbsp;₽</td>
           </tr>
         </tbody>
       </table>
