@@ -4,8 +4,9 @@
       <div class="row">
         <div class="col-12 col-sm-5 text-left">
           <small class="d-block mb-3"
-            >* Предложение не является публичной офертой!<br /><br />
-            ** Каждая следующая
+            >* Предложение не является публичной офертой!<br />
+            ** В стоимость вызова уже входит стоимость работ<br />
+            *** Каждая следующая
             <abbr title="Замена розетки, выключателя и т.д.">точка</abbr> на 25%
             дешевле суммы предыдущих.
           </small>
@@ -39,28 +40,7 @@
                 >89069404069</a
               >
             </li>
-            <li class="d-flex align-items-center mb-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-person-circle"
-                viewBox="0 0 16 16"
-              >
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path
-                  fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                />
-              </svg>
-              <a
-                class="text-white ms-2"
-                href="http://vk.com/em5electric"
-                target="_blank"
-                >vk.com/em5electric</a
-              >
-            </li>
+
             <li class="d-flex align-items-center mb-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

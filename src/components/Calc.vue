@@ -16,10 +16,10 @@
         <tbody>
           <tr>
             <td class="text-left ps-2" vertical-align="baseline">
-              <span class="d-none d-sm-block">Вызов электрика</span>
-              <small class="d-sm-none">Вызов электрика</small>
+              <span class="d-none d-sm-block">Вызов мастера</span>
+              <small class="d-sm-none">Вызов мастера</small>
             </td>
-            <td>200</td>
+            <td>500</td>
             <td width="10%"></td>
             <td>
               <div
@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { loadList } from '../core/raboty.js'
+import { loadList } from './../core/raboty.js'
 import Rabota from './Rabota.vue'
 
 export default {
@@ -68,13 +68,13 @@ export default {
     return {
       listRabot: loadList(),
       arraySumm: [],
-      totalSumma: '200'
+      totalSumma: '500'
     }
   },
   methods: {
     addSumm(summFrom, id) {
       this.arraySumm[id] = summFrom
-      let totSum = 200
+      let totSum = 500
       this.arraySumm.forEach(function (item) {
         totSum = totSum + +item
       })

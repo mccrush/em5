@@ -11,12 +11,11 @@
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from '@/components/Header.vue'
-import Hellow from '@/components/Hellow.vue'
-import Calc from '@/components/Calc.vue'
-import Contacts from '@/components/Contacts.vue'
-import Footer from '@/components/Footer.vue'
+import Header from './components/Header.vue'
+import Hellow from './components/Hellow.vue'
+import Calc from './components/Calc.vue'
+import Contacts from './components/Contacts.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
