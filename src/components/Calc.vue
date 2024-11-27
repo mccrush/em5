@@ -5,17 +5,17 @@
         <thead>
           <tr>
             <th scope="col">Вид работ*</th>
-            <th scope="col"><abbr title="Стоимость работы">Стоим.</abbr></th>
-            <th scope="col"><abbr title="Количество">Кол.**</abbr></th>
-            <th scope="col">Выбор</th>
+            <th scope="col">₽</th>
+            <th scope="col">Колич.</th>
+            <th scope="col" class="text-center">Выбор</th>
             <th scope="col">Сумма</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="text-start ps-2" vertical-align="baseline">
-              <span class="d-none d-sm-block">Вызов мастера**</span>
-              <small class="d-sm-none">Вызов мастера**</small>
+              <span class="d-none d-sm-block">Выезд мастера</span>
+              <small class="d-sm-none">Выезд мастера</small>
             </td>
             <td>{{ minSumma }}</td>
             <td width="10%"></td>
@@ -72,15 +72,16 @@ export default {
   },
   methods: {
     calcSumm() {
-      let totSum = 0
+      let totSum = this.minSumma
       this.arraySumm.forEach(function (item) {
         totSum = totSum + +item
       })
-      if (totSum < this.minSumma) {
-        this.totalSumma = this.minSumma
-      } else {
-        this.totalSumma = totSum
-      }
+      // if (totSum < this.minSumma) {
+      //   this.totalSumma = this.minSumma
+      // } else {
+      //   this.totalSumma = totSum
+      // }
+      this.totalSumma = totSum
     },
     addSumm(summFrom, id) {
       this.arraySumm[id] = summFrom

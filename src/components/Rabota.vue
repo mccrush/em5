@@ -71,25 +71,19 @@ export default {
   },
   methods: {
     comput: function () {
-      let summa =
-        this.counter * this.price - (this.price / 4) * (this.counter - 1)
-      //console.log('summa = ', summa);
+      // let summa = this.counter * this.price - (this.price / 4) * (this.counter - 1)
 
-      summa = Math.ceil(summa)
-      //console.log('okrugl summa = ', summa);
+      // summa = Math.ceil(summa)
 
-      let ostatok = summa % 10
-      //console.log('ostatok na 10 = ', ostatok);
+      // let ostatok = summa % 10
 
-      summa = summa - ostatok
-      //console.log('summa bez ostatka = ', summa);
+      // summa = summa - ostatok
 
-      ostatok = ostatok > 5 ? 10 : 0
-      //console.log('noviy ostatok = ', ostatok);
+      // ostatok = ostatok > 5 ? 10 : 0
+      // summa = summa + ostatok
+      // this.summa = summa
 
-      summa = summa + ostatok
-      //console.log('novaya summa = ', summa);
-      this.summa = summa
+      this.summa = this.counter * this.price
 
       if (this.isActive) this.$emit('add-summ', this.summa, this.rabotaFrom.id)
       this.abort = true
